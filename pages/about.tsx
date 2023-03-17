@@ -7,6 +7,7 @@ export default function About() {
       test
       <div>
         Back to <Link href="/">Home</Link>
+        fgfg
       </div>
     </div>
   )
