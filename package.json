@@ -2,8 +2,8 @@
   "private": true,
   "scripts": {
     "dev": "next",
-    "build": "next build && next export && touch ./out/.nojekyll",
-    "deploy": "yarn build && git add ./out/ && git commit -m \"Deploy 1\" && git subtree push --prefix out origin gh-pages"
+    "build": "next build && next export",
+    "deploy": "yarn build && touch out/.nojekyll && git add out/ && git commit -m \"Deploy this\" && git subtree push --prefix out origin gh-pages"
   },
   "dependencies": {
     "next": "latest",
