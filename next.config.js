@@ -1,10 +1,8 @@
-// @ts-check
+const isProd = process.env.NODE_ENV === 'production'
 
-/**
- * @type {import('next').NextConfig}
- **/
-const nextConfig = {
-  basePath: '/test-gh-pg-next',
+module.exports = {
+  basePath: isProd ? '/test-gh-pg-next' : '',
+  images: {
+    unoptimized: true,
+  },
 }
-
-module.exports = nextConfig
